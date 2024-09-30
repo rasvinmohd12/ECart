@@ -1,0 +1,17 @@
+       REDUX - STATE MANAGEMENT TOOL
+-----------------------------------------
+1. To avoid 'props drilling' and manage state in react app
+2. Packages needed to implement REDUX : Installing command - npm install @reduxjs/toolkit react-redux
+    - React-Redux : official Resct binding for REDUX
+    - Redux Toolkit : toolset for efficient redux development
+3. REDUX Features
+    -  Creation of Store : used to hold all states
+         - configureStore() : helps to create store to hold all states in an app, to provide store to react app use 'Provider' component from react-redux library
+
+    - Action : used to define logic to update state 
+    - Reducer : used to hold updated value of state in store
+    - createSlice() : used to combine both action and its reducer, it return actions, reducer, we pass argument to createSlice as object (name, initial state, reducers)        
+    - useSelector hook : used to access state from store to component, syntax : useSelector(state=>state.reducer-name)
+    - useDispatch hook : used to execute action from a component, and it return the dispatch function from the redux store can pass argument as action
+    - all redux methods are synchronous
+    - createAsyncThunk(action,function can return 'promise') : to make asyncronous function call in an action, normal reducer cannot resolve promise
