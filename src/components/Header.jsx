@@ -12,7 +12,7 @@ const myCart = useSelector(state=>state.cartReducer)
 
 
   return (
-    <nav className='flex w-full bg-purple-300 fixed top-0 p-3 items-center'>
+    <nav className='flex w-full bg-blue-600 fixed top-0 p-3 items-center'>
     <Link className='text-white font-semibold' to={'/'}><i class="fa-solid fa-truck-fast me-1"></i>E Cart</Link>
     <ul className='flex-1 text-right'>
    { insideHome && <li className='list-none inline-block px-5'><input  onChange={e=>dispatch(searchProduct(e.target.value.toLowerCase()))} style={{width:'300px'}} className='rounded p-1' type="text" placeholder='search products here!' /></li>}

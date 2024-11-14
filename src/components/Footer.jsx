@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaArrowRight } from 're
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-300 text-white py-10 w-full z-50">
+    <footer className="bg-blue-600 text-white py-10 w-full z-50">
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between">
         {/* Media Player Section */}
         <div className="flex-1 mb-8 min-w-[200px] px-4">
